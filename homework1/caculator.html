@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>加減乘除</title>
+</head>
+<body>
+
+<script language="javascript">
+function ShowValue(){
+　var v=document.getElementById("test").value;
+　alert(vL);	
+}
+function ShowValue1(){
+
+　var x=parseFloat(document.getElementById("number1").value);
+	var y=parseFloat(document.getElementById("number2").value);
+	var sum =x+y;
+	document.getElementById("result1").value=sum;
+	
+}
+function ShowValue2(){
+　var x=parseFloat(document.getElementById("number1").value);
+	var y=parseFloat(document.getElementById("number2").value);
+	var sum =x-y;
+	document.getElementById("result2").value=sum;
+	
+}
+function ShowValue3(){
+　var x=parseFloat(document.getElementById("number1").value);
+	var y=parseFloat(document.getElementById("number2").value);
+	var sum =x*y;
+	document.getElementById("result3").value=sum;
+	
+}
+function ShowValue4(){
+　var x=parseFloat(document.getElementById("number1").value);
+	var y=parseFloat(document.getElementById("number2").value);
+	var sum =x/y;
+	document.getElementById("result4").value=sum;
+	
+}
+
+</script>
+<input type="text" id="number1" value="1">
+<input type="text" id="number2" value="1">
+<input type="button" id="result1" value="0" onclick="ShowValue1()">
+<input type="button" id="result2" value="0" onclick="ShowValue2()">
+<input type="button" id="result3" value="0" onclick="ShowValue3()">
+<input type="button" id="result4" value="0" onclick="ShowValue4()">
+<button onclick=ShowValue1()>加</button>
+<button onclick=ShowValue2()>減</button>
+<button onclick=ShowValue3()>乘</button>
+<button onclick=ShowValue4()>除</button>
+<div id="result">特殊計算機</div>
+</body>
+</html>
